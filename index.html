@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Księga Gości - Wesele</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -15,12 +15,10 @@
     html, body {
       height: 100%;
       width: 100%;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    body {
-      background: url('tlo.jpg') no-repeat center center;
-      background-size: cover;
+      font-family: 'Cinzel', serif;
+      color: #9b7bb5;
+      background: url('1.jpg') no-repeat bottom center;
+      background-size: 100% auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,29 +26,33 @@
     }
 
     .overlay {
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 60px 30px;
-      border-radius: 24px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
       max-width: 700px;
       margin: 20px;
+      padding: 0;
+    }
+
+    .monogram {
+      width: 100px;
+      margin: 0 auto 20px auto;
     }
 
     h1 {
-      font-family: 'Great Vibes', cursive;
       font-size: 64px;
-      color: #b76e79;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      font-size: 18px;
+      margin-bottom: 30px;
     }
 
     p {
       font-size: 20px;
-      color: #444;
       margin-bottom: 30px;
     }
 
     .button {
-      background-color: #b76e79;
+      background-color: #b19cd9;
       color: white;
       padding: 16px 36px;
       border-radius: 50px;
@@ -60,19 +62,26 @@
     }
 
     .button:hover {
-      background-color: #a04c5a;
+      background-color: #a083c4;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 40px;
       }
-      p {
+
+      p, .subtext {
         font-size: 16px;
       }
+
       .button {
         font-size: 16px;
         padding: 12px 28px;
+      }
+
+      .monogram {
+        width: 70px;
+        margin-bottom: 16px;
       }
     }
   </style>
@@ -80,11 +89,14 @@
 <body>
 
   <div class="overlay">
+    <img src="mono.png" alt="Monogram" class="monogram" />
     <h1>Księga Gości</h1>
-    <p>Dziękujemy, że jesteście z nami w tym wyjątkowym dniu 💍</p>
-    <a class="button" href="https://mega.nz/your-upload-link" target="_blank">📸 Dodaj zdjęcia</a>
+    
+    <p>Dziękujemy, że jesteście z nami w tym wyjątkowym dniu.</p>
+    <p>Podzielcie się zdjęciami i filmami z przyjęcia.</p>
+    <div class="subtext">Sylwia & Hubert<br>12.07.2025</div>
+    <a class="button" href="https://mega.nz/filerequest/Mb5gEiw8wnY" target="_blank" rel="noopener noreferrer">📸 Dodaj zdjęcia</a>
   </div>
 
 </body>
 </html>
-
